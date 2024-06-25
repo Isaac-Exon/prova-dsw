@@ -2,9 +2,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #888;
+  background-color: #e2e2e2;
   margin: 0;
   font-family: "Roboto";
   height: 100vh;
 }
-

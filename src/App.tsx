@@ -1,18 +1,17 @@
-import styled from "styled-components";
-import RGB from "./pages/RGB";
-import HSLA from "./pages/HSLA";
+import React from "react";
+import { Provider } from "./contexts/Contexto";
+import Form from "./components/Form";
+import List from "./components/List";
 
-export default function App() {
+const App: React.FC = () => {
   return (
-    <WrapperSld>
-      <RGB />
-      <HSLA />
-    </WrapperSld>
+    <Provider>
+      <div className="App">
+        <Form />
+        <List />
+      </div>
+    </Provider>
   );
-}
+};
 
-const WrapperSld = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+export default App;
